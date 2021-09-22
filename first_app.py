@@ -171,22 +171,5 @@ details(df,df_t)
 
                                               
 
-def timeit(method):
 
-    def timed():
-        start_time = datetime.now()
-        method
-        end_time = datetime.now()
-        result = end_time - start_time
-
-        f = open("myProgramLog.txt", "a")
-        f.write('\nDuration of {}: {}'.format(method.__name__,result))
-        f.close()
-
-    return timed
-
-timer = timeit(details)
-timer2 = timeit(showdf)
-timer()
-timer2()
 
