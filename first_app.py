@@ -100,7 +100,6 @@ def barplot_vendors(df):
             df["VendorID"], bins=2, range=(0.5,3))[0]
     st.bar_chart(hist_values)
 
-@st.cache
 def details(df,df_t):
     datas = st.selectbox("Which data do you want to analyze ?",("Uber","Trips"))
     st.title("")
